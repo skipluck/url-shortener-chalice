@@ -21,10 +21,10 @@ def index():
     # Generate unique 6 character token
     token = hashlib.md5(url.encode('utf-8')).hexdigest()[:6]
 
-#    # Store in dynamodb
-#    DDB.put_item(TableName=os.environ['APP_TABLE_NAME'],
-#                 Item={'token': {'S': token},
-#              'url': {'S': url}})
+    # Store in dynamodb
+    DDB.put_item(TableName=os.environ['APP_TABLE_NAME'],
+                 Item={'token': {'S': token},
+              'url': {'S': url}})
 
     return {'shortened': token, "url": url}
 

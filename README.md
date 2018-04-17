@@ -48,7 +48,7 @@ git clone https://github.com/skipluck/url-shortener-chalice
 
 ## Running the application locally
 
-AWS Chalice allows you to spin up a local HTTP server that mimics AWS API gateway. This is helpful for testing applications prior to deploying the code to AWS.
+AWS Chalice allows you to spin up a local HTTP server that mimics AWS API gateway. This is helpful for testing applications prior to deploying to AWS.
 ```
 chalice local
 ```

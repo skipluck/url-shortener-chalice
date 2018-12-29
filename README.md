@@ -17,6 +17,11 @@ Project to create URL Shortener using:
     * In the **Table name** field, type ```url-shortener```
     * For the **Primary key**, in the **Partition key** field, type ```token```. Set the data type to String.
 * Click **Create**.
+* To Enable TTL on table read the following:
+    *  Set **TTL Atribute** value ```ttl```.
+    * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/howitworks-ttl.html
+    * https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/time-to-live-ttl-how-to.html
+
 
 ## Creating AWS Chalice Virtual Environment
 ```
